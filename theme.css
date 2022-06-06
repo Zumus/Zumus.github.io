@@ -4,6 +4,7 @@
  * Globals
  */
 
+ @import url('fontawesome-free-6.1.1-web\css\fontawesome.css');
 /* Links */
 a,
 a:focus,
@@ -197,6 +198,84 @@ body {
     z-index: 100;
 }
 
+.card-container{
+  display:flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-content: center;
+
+}
+.card{
+  border-radius: 30px;
+  width: 300px;
+  height: 320px;
+  padding: 40px;
+  background-color:rgba(34, 29, 191, 0.728);
+  border: 4px solid rgb(255, 255, 255);
+  margin: 30px;
+  display:inline-block;
+  box-shadow: 
+    0 0 30px 10px rgba(0, 37, 184, 0.476),
+    inset 0 0 20px 0px rgb(39, 131, 229);
+  align-content: center;
+  vertical-align: middle;
+}
+
+.about-me{
+  display:table;
+  clear:both;
+  width:100%;
+}
+
+.about-me-item-1{
+  display:inline-block;
+  width:40%;
+}
+
+.about-me-item-1 > img{
+  float:center;
+  margin-left: 100px;
+  border-radius:10px;
+  width:45%;
+  height:45%;
+}
+
+.about-me-item-2{
+  display:inline-block;
+  width:60%;
+  vertical-align: middle;
+}
+
+.about-me-item-2 > li{
+  width:100%;
+  padding:10px;
+  display:inline-block;
+  white-space: pre-line;
+  text-align:left;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight:600;
+
+}
+
+.card h1{
+  font-size: 40px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight:600;
+  vertical-align: text-top;
+  width:100%;
+  text-align:center;
+}
+
+.card p{
+  font-size: 20px;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight:500;
+  text-align:left;
+  white-space: pre-line;
+  display: inline-block;
+}
 .col-lg-12 {
     position: relative;
     min-height: 1px;
@@ -207,6 +286,7 @@ body {
 
 .deco_box{
 	border:solid 3px #fff;
+  border-bottom: none;
 	padding:40px 80px 0 80px;
 	overflow:hidden;
     margin-right:-15px;
@@ -258,6 +338,127 @@ body {
 section {
   display:none;
 }
+
+
+/* social-icons */
+
+
+/* ================================================== */
+
+.social-icons {
+	display: inline-block;
+}
+.social-icons i {
+	text-shadow: none;
+	color: #fff;
+	padding: 0;
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	font-size: 24px;
+	border-radius: 60px;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border:solid 2px rgba(255,255,255,.1);
+}
+.social-icons i:hover {
+	background: #fff;
+	border-color: #eceff3;
+	color: #333;
+}
+.social-icons.big i {
+	margin: 0 15px 0 15px;
+}
+.social-icons.big i:hover {
+	background: none;
+}
+.social-icons.s1 i{
+	border:none;
+	margin:5px;
+} 
+.social-icons.s1:hover i{
+	background:none;
+} 
+
+.social-icons.s1 {
+  line-height: 0.5;
+  text-align: center;
+}
+.social-icons.s1 .inner {
+  display: inline-block;
+  position: relative; 
+}
+.social-icons.s1 .inner:before,
+.social-icons.s1 .inner:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  top: 0;
+  width: 100%;
+}
+.social-icons.s1 .inner:before {
+  right: 100%;
+  margin-right: 15px;
+  margin-top:20px;
+}
+.social-icons.s1 .inner:after {
+  left: 100%;
+  margin-left: 15px;
+  margin-top:20px;
+}
+.social-icons.s2{
+	margin-top:30px;
+}
+.social-icons.s2 i{
+	border:none;
+	margin:4px;
+	padding-top:13px;
+	font-size:20px;
+	background:rgba(255,255,255,.2);
+	color:#fff;
+} 
+
+.sc-wrap {
+  line-height: 0.5;
+  text-align: center;
+}
+.sc-wrap .social-icons {
+  display: inline-block;
+  position: relative; 
+}
+.sc-wrap .social-icons:before,
+.sc-wrap .social-icons:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: solid 3px #fff;
+  top: 0;
+  width: 100%;
+  margin-top:45px;
+}
+.sc-wrap .social-icons:before {
+  right: 100%;
+  margin-right: 20px;
+}
+.sc-wrap .social-icons:after {
+  left: 100%;
+  margin-left: 20px;
+}
+
+my-icon {
+  vertical-align: middle;
+}
+/*
+	.social-icons .fa-facebook{	background:#305fb3;	}
+	.social-icons .fa-twitter{	background:#00d7d5;	}
+	.social-icons .fa-rss{ background:#fca600;	}
+	.social-icons .fa-google-plus{ background:#d7482a;	}
+	.social-icons .fa-skype{ background:#12c7ef;	}
+	.social-icons .fa-dribbble{ background:#f06eaa;	}
+	*/
+
+
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
